@@ -755,9 +755,11 @@ footer a {
 }
 
 .inner-image {
+  display: block;
   position: relative;
+  max-height: 50vh;
   margin: auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .content-step > div > figure > figcaption {
@@ -766,8 +768,10 @@ footer a {
 }
 
 .inner-video {
+  display: block;
+  max-height: 50vh;
   margin: auto;
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 3vh;
   margin-top: 1vh;
 }
@@ -776,17 +780,26 @@ footer a {
   .content-step > div > figure > figcaption {
     font-size: 14px;
   }
+  #stiky-header {
+    top: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .content-step > div > figure > figcaption {
     font-size: 16px;
   }
+  #stiky-header {
+    top: 50px;
+  }
 }
 
 @media (min-width: 1024px) {
   .content-step > div > figure > figcaption {
     font-size: calc(16px + 0.5vh);
+  }
+  #stiky-header {
+    top: 0;
   }
 }
 
@@ -796,7 +809,6 @@ footer a {
 
 #stiky-header {
   position: sticky;
-  top: 0;
   height: 10vh;
   width: 100vw;
   /* background-color: #f6f6f4; */
@@ -841,7 +853,7 @@ footer a {
 }
 
 .war-step {
-  background-color: #616161;
+  background-color: #2a2a2a;
   color: #ffffff;
 }
 
@@ -921,7 +933,7 @@ body {
 }
 
 .black-back {
-  background-color: #616161;
+  background-color: #2a2a2a;
   color: #ffffff;
 }
 

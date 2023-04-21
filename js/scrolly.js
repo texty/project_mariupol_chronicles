@@ -1,3 +1,6 @@
+
+
+
 var Images = {};
 for (var i = 1; i <= 18; i++) {
   Images[i] = "./maps/" + i + ".jpg";
