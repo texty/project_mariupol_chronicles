@@ -29,6 +29,7 @@
 }
 
 header {
+  font-family: "proxima";
   min-height: 2em;
   width: 100%;
   background-color: white;
@@ -69,7 +70,6 @@ header .rubrics-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #f6f6f4;
 }
 
 header .rubric {
@@ -102,7 +102,6 @@ header .rubrics-container .r-burger {
   content: "";
   top: -8px;
 }
-
 .menu__btn > span::after {
   content: "";
   top: 8px;
@@ -186,47 +185,53 @@ header .rubrics-container .r-burger {
     background-color: black;
     grid-template-columns: auto 80px;
   }
+
   header .texty-logo {
     grid-column: 1/2;
     justify-content: center;
     margin-left: 1em;
   }
+
   header .rubrics-container {
     display: block;
     grid-column: 2/3;
     grid-row: 1/2;
     padding: 0 20px;
   }
+
   header .rubrics-container .r1,
   header .rubrics-container .r2,
   header .rubrics-container .r3,
   header .rubrics-container .r4 {
     display: none;
   }
+
   .desktop-only {
     display: none;
   }
+
   .mobile-only {
     display: block;
   }
+
   .menu__btn > span,
   .menu__btn > span::before,
   .menu__btn > span::after {
     background-color: white;
   }
+
   .items__container {
     background-color: black;
     display: block;
   }
 }
-/*  read more section */
 
+/*  read more section */
 #read-more-title {
   grid-column: 1/-1;
   text-align: center;
   margin: auto;
-  position: relative;
-  color: white;
+  font-family: "proxima";
 }
 
 #custom-read-more {
@@ -236,7 +241,7 @@ header .rubrics-container .r-burger {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  font-family: "proxima";
 }
 
 #custom-read-more > .rm {
@@ -260,30 +265,26 @@ header .rubrics-container .r-burger {
 
 #rm-1 {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://raw.githubusercontent.com/texty/war_one_year/main/cover.jpg");
+    url("https://texty.org.ua/media/images/slidesnetwork26.original.jpg");
   background-size: cover;
-  text-transform: capitalize;
 }
 
 #rm-2 {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://texty.org.ua/media/images/cover_3.2e16d0ba.fill-1200x630.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
-  text-transform: capitalize;
-  font-family: "proxima-bold", sans-serif;
 }
 
 #rm-3 {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("https://raw.githubusercontent.com/texty/chernigiv_vysota_draft/main/img/misto_z_pagorba.JPG");
+    url("https://texty.org.ua/media/images/cover_f2iO7z7.original.png");
   background-size: cover;
-  font-family: "proxima-bold", sans-serif;
 }
 
 @media (max-width: 812px) {
   #custom-read-more {
     display: block !important;
   }
+
   #custom-read-more > .rm {
     width: 90%;
   }
@@ -291,6 +292,7 @@ header .rubrics-container .r-burger {
 /*  Subscribe-footer */
 
 .subscribe-footer {
+  font-family: "proxima";
   width: 100%;
   margin: 50px auto;
   display: grid;
@@ -373,12 +375,14 @@ header .rubrics-container .r-burger {
     width: 100%;
     border: 1px solid grey;
   }
+
   .subscribe-footer .mail-input-container input {
     background-color: unset;
     border: 0;
     min-height: 30px;
     width: 100%;
   }
+
   .subscribe-footer .subscribe-button {
     cursor: pointer;
     min-height: 38px;
@@ -388,6 +392,7 @@ header .rubrics-container .r-burger {
     background-color: black;
     width: 100%;
   }
+
   .subscribe-footer .mail-input-container i.icon-envelope {
     margin: auto 10px;
     width: 40px;
@@ -400,14 +405,10 @@ header .rubrics-container .r-burger {
 /* FOOTER */
 
 footer {
+  font-family: "proxima";
   padding-bottom: 50px;
   display: grid;
   grid-template-columns: [start] 2fr [logo-start] 13fr [logo-end] 5fr [guide-start] 35fr [guide-end] 5fr [sb-start] 13fr [sb-end] 1fr [end];
-  z-index: 999;
-  position: relative;
-  color: black;
-  background-color: white;
-  font-family: "proxima", "sans-serif";
 }
 
 #social_buttons {
@@ -483,12 +484,14 @@ footer a {
     display: block;
     margin-top: -2px;
   }
+
   #guide-block {
     display: block;
   }
 }
 
 .share-article {
+  font-family: "proxima";
   grid-column: text-start/text-end;
   margin: 20px auto;
   display: flex;
@@ -497,8 +500,6 @@ footer a {
   width: 250px;
   min-width: max-content;
   grid-template-columns: repeat(4, 1fr);
-  color: white;
-  position: relative;
 }
 
 .share-article .share-title {
