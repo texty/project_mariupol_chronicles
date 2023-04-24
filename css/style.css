@@ -411,6 +411,14 @@ footer {
   grid-template-columns: [start] 2fr [logo-start] 13fr [logo-end] 5fr [guide-start] 35fr [guide-end] 5fr [sb-start] 13fr [sb-end] 1fr [end];
 }
 
+#footer p {
+  font-family: "proxima";
+  font-size: calc(14px + 0.5vw);
+  margin: auto;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
 #social_buttons {
   grid-column: sb-start/sb-end;
 }
@@ -474,6 +482,7 @@ footer a {
   text-decoration: inherit;
   color: inherit;
   transition: color 0.05s ease-in-out;
+  font-size: calc(14px + 0.5vw);
 }
 
 @media (max-width: 800px) {
@@ -652,17 +661,26 @@ footer a {
   #scroll {
     width: 100%;
   }
+  #footer p {
+    width: 90vw;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
   #scroll {
     width: 100%;
   }
+  #footer p {
+    width: 90vw;
+  }
 }
 
 @media (min-width: 1024px) {
   #scroll {
     width: 100%;
+  }
+  #footer p {
+    width: 70vw;
   }
 }
 
