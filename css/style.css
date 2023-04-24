@@ -693,6 +693,8 @@ footer a {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "proxima";
+  font-size: calc(14px + 0.5vw);
+  line-height: 1.5;
 }
 
 @media (max-width: 767px) {
@@ -703,9 +705,9 @@ footer a {
     padding-top: 1vh;
     padding-bottom: 1vh;
   }
-  .content-step div p {
+  /* .content-step div p {
     font-size: 14px;
-  }
+  } */
   .content-step div h3 {
     font-size: 18px;
   }
@@ -719,9 +721,9 @@ footer a {
     padding-top: 3vh;
     padding-bottom: 3vh;
   }
-  .content-step div p {
+  /* .content-step div p {
     font-size: 16px;
-  }
+  } */
   .content-step div h3 {
     font-size: 20px;
   }
@@ -735,9 +737,9 @@ footer a {
     padding-top: 5vh;
     padding-bottom: 5vh;
   }
-  .content-step div p {
+  /* .content-step div p {
     font-size: calc(16px + 1vh);
-  }
+  } */
   .content-step div h3 {
     font-size: calc(20px + 1vh);
   }
@@ -764,6 +766,10 @@ footer a {
 .content-step > div > figure > figcaption {
   font-family: "proxima";
   margin: auto;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 .inner-video {
@@ -776,27 +782,27 @@ footer a {
 }
 
 @media (max-width: 767px) {
-  .content-step > div > figure > figcaption {
+  /* .content-step > div > figure > figcaption {
     font-size: 14px;
-  }
+  } */
   #stiky-header {
     top: 50px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content-step > div > figure > figcaption {
+  /* .content-step > div > figure > figcaption {
     font-size: 16px;
-  }
+  } */
   #stiky-header {
     top: 50px;
   }
 }
 
 @media (min-width: 1024px) {
-  .content-step > div > figure > figcaption {
+  /* .content-step > div > figure > figcaption {
     font-size: calc(16px + 0.5vh);
-  }
+  } */
   #stiky-header {
     top: 0;
   }
@@ -832,7 +838,7 @@ footer a {
 
 #type-placeholder {
   letter-spacing: 0.2rem;
-  max-width: 325px;
+  /* max-width: 325px; */
 }
 
 #civic-date #war-date {
@@ -851,7 +857,7 @@ footer a {
   display: flex;
   justify-content: space-around;
   height: 5vh;
-  width: 25vw;
+  /* width: 25vw; */
 }
 
 .war-step {
@@ -879,20 +885,24 @@ footer a {
 }
 
 .title {
+  font-size: calc(60px + 3vw);
   display: flex;
   justify-content: space-around;
   margin: auto;
   font-family: "proxima-bold";
 }
 
-#lead {
-  font-family: "proxima-medium";
+.lead {
+  font-family: "proxima";
   margin: auto;
+  font-size: calc(15px + 0.5vw);
+  line-height: 1.5;
+  font-weight: 600;
 }
 
 @media (max-width: 767px) {
-  #lead {
-    font-size: 16px;
+  .lead {
+    /* font-size: 16px; */
     width: 90vw;
   }
   .title {
@@ -901,8 +911,8 @@ footer a {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  #lead {
-    font-size: 18px;
+  .lead {
+    /* font-size: 18px; */
     width: 90vw;
   }
   .title {
@@ -911,13 +921,18 @@ footer a {
 }
 
 @media (min-width: 1024px) {
-  #lead {
-    font-size: calc(18px + 1vh);
+  .lead {
+    /* font-size: calc(18px + 1vh); */
     width: 75vw;
   }
   .title {
     font-size: calc(24px + 3vh);
   }
+}
+
+.creds {
+  margin: auto;
+  font-family: "proxima-medium";
 }
 
 body {
@@ -950,26 +965,30 @@ body {
   display: flex;
   justify-content: space-around;
   background-color: #fee9ba;
-
   margin: auto;
   padding: 5px 20px;
+  margin-bottom: 25px;
 }
 
 .spoiler details h4 {
   font-family: "proxima-medium";
+  font-size: calc(14px + 0.5vw);
 }
 
 .spoiler details ol {
   font-family: "proxima";
   margin-left: 10px;
+  font-size: calc(12px + 0.5vw);
 }
 
 .spoiler details ol li {
-  margin-bottom: 10px;
+  font-family: "proxima";
+  margin-bottom: 20px;
 }
 
 .spoiler details p {
   font-family: "proxima";
+  font-size: calc(12px + 0.5vw);
 }
 
 summary::-webkit-details-marker {
