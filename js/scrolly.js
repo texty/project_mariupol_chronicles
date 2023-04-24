@@ -1,8 +1,5 @@
-
-
-
 var Images = {};
-for (var i = 1; i <= 18; i++) {
+for (var i = 1; i < 21; i++) {
   Images[i] = "./maps/" + i + ".jpg";
 
   d3.select(".scroll__text")
@@ -21,7 +18,11 @@ var step = document.querySelector("#scroll > .scroll__text > .step"); // text.se
 var scroller = scrollama();
 
 function handleStepEnter(r) {
-  $("#gif-pic").attr("src", Images[r.index]);
+  if (r.index < 4) {
+    $("#gif-pic").attr("src", Images[1]);
+  } else {
+    $("#gif-pic").attr("src", Images[r.index]);
+  }
 }
 
 function init() {
@@ -33,6 +34,7 @@ function init() {
       step: ".scroll__text .step",
       offset: 0.9,
       debug: false,
+      progress: true,
     })
     .onStepEnter(handleStepEnter);
 }
