@@ -28,6 +28,34 @@
   src: url("../fonts/PROXIMA-NOVA-A-SEMIBOLD.OTF") format("opentype");
 }
 
+a:link {
+  color: #ff673f;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: #ff673f;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #ff673f;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:active {
+  color: #ff673f;
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 header {
   font-family: "proxima";
   min-height: 2em;
@@ -482,7 +510,7 @@ footer a {
   text-decoration: inherit;
   color: inherit;
   transition: color 0.05s ease-in-out;
-  font-size: calc(14px + 0.5vw);
+  /* font-size: calc(14px + 0.5vw); */
 }
 
 @media (max-width: 800px) {
@@ -636,12 +664,36 @@ footer a {
   /* margin: 50px auto 50px auto; */
 }
 
+#scroll-mobile {
+  grid-column: 1/-1;
+  position: relative;
+
+  /* max-width: 1000px; */
+  /* margin: 50px auto 50px auto; */
+}
+
 .scroll__graphic {
   width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 1px;
   left: 0;
+}
+
+.scroll__graphic-mobile {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+  left: 0;
+}
+
+#gif-pic-mobile {
+  max-width: 105vw;
+  max-height: 100vh;
+  width: 100%;
+  margin-top: 30vh;
+  margin-bottom: 30vh;
 }
 
 @media (max-width: 800px) {
@@ -657,21 +709,37 @@ footer a {
   z-index: 100;
 }
 
-@media (max-width: 767px) {
+.step-map {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  #gif-pic-mobile {
+    margin-top: 10vh;
+  }
   #scroll {
     width: 100%;
   }
   #footer p {
     width: 90vw;
+  }
+  .step-map {
+    height: 20vh;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1023px) {
+  #gif-pic-mobile {
+    margin-top: 10vh;
+  }
   #scroll {
     width: 100%;
   }
   #footer p {
     width: 90vw;
+  }
+  .step-map {
+    height: 20vh;
   }
 }
 
@@ -682,11 +750,9 @@ footer a {
   #footer p {
     width: 70vw;
   }
-}
-
-.step-map {
-  height: 100px;
-  margin-bottom: 10px;
+  .step-map {
+    height: 30vh;
+  }
 }
 
 .content-step {
@@ -715,7 +781,7 @@ footer a {
   line-height: 1.5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   .content-step div {
     width: 95vw;
   }
@@ -731,7 +797,7 @@ footer a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1023px) {
   .content-step div {
     width: 80vw;
   }
@@ -799,7 +865,7 @@ footer a {
   margin-top: 1vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   /* .content-step > div > figure > figcaption {
     font-size: 14px;
   } */
@@ -808,12 +874,12 @@ footer a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1023px) {
   /* .content-step > div > figure > figcaption {
     font-size: 16px;
   } */
   #stiky-header {
-    top: 50px;
+    top: 0px;
   }
 }
 
@@ -880,7 +946,7 @@ footer a {
 
 .war-step {
   background-color: #2a2a2a;
-  color: #ffffff;
+  color: #cdcdcd;
 }
 
 #cover {
@@ -899,42 +965,72 @@ footer a {
 
 .title-wrapper {
   width: 80%;
-  margin: auto;
+  /* margin: auto; */
 }
 
 .title {
-  font-size: calc(60px + 3vw);
-  display: flex;
-  justify-content: space-around;
-  margin: auto;
+  /* display: flex;
+  justify-content: space-around; */
+  /* margin: auto; */
+  /* margin-left: 10vw; */
   font-family: "proxima-bold";
 }
 
 .lead {
   font-family: "proxima";
-  margin: auto;
+  /* margin: auto; */
   font-size: calc(15px + 0.5vw);
   line-height: 1.5;
   font-weight: 600;
 }
 
-@media (max-width: 767px) {
+.lead-text {
+  font-family: "proxima";
+  /* margin: auto; */
+  font-size: calc(15px + 0.5vw);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.creds {
+  margin: auto;
+  font-family: "proxima-medium";
+}
+
+@media (max-width: 800px) {
   .lead {
     /* font-size: 16px; */
     width: 90vw;
+    margin-left: 5vw;
   }
   .title {
-    font-size: 20px;
+    font-size: calc(50px + 3vw);
+    margin-left: 5vw;
+  }
+  #cover {
+    margin-top: -120vh;
+  }
+  .creds {
+    margin-left: 5vw;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1023px) {
   .lead {
     /* font-size: 18px; */
     width: 90vw;
+    margin-left: 5vw;
   }
   .title {
-    font-size: 24px;
+    font-size: calc(70px + 3vw);
+    margin-top: -40vh;
+    margin-left: 5vw;
+  }
+  #cover {
+    margin-top: -130vh;
+  }
+  .creds {
+    margin-left: 5vw;
   }
 }
 
@@ -943,18 +1039,38 @@ footer a {
     /* font-size: calc(18px + 1vh); */
     width: 75vw;
   }
+  .lead-text {
+    width: 50vw;
+  }
   .title {
-    font-size: calc(24px + 3vh);
+    font-size: calc(90px + 3vw);
+  }
+  .creds {
+    margin: auto;
   }
 }
 
-.creds {
-  margin: auto;
-  font-family: "proxima-medium";
+@media (min-width: 1024px) and (max-width: 1300px) {
+  .title {
+    margin-top: -50vh;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1500px) {
+  .title {
+    margin-top: -70vh;
+  }
+}
+
+@media (min-width: 1501px) {
+  .title {
+    margin-top: -80vh;
+  }
 }
 
 body {
   overflow-x: hidden;
+  margin: auto;
 }
 
 .tippy-box {
@@ -965,6 +1081,7 @@ body {
 .tippy-box .tippy-content img {
   height: 40vh;
   z-index: 2;
+  box-shadow: 10px 10px 5px 5px #000000;
 }
 
 .black-back {
@@ -982,7 +1099,7 @@ body {
 .spoiler {
   display: flex;
   justify-content: space-around;
-  background-color: #fee9ba;
+  background-color: #facbb9;
   margin: auto;
   padding: 5px 20px;
   margin-bottom: 25px;
@@ -1065,7 +1182,7 @@ details {
   font-family: "proxima-medium";
 }
 
-@media (max-width: 767px) {
+@media (max-width: 800px) {
   details {
     width: 90vw;
   }
@@ -1080,7 +1197,7 @@ details {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 801px) and (max-width: 1023px) {
   details {
     width: 80vw;
   }
@@ -1108,4 +1225,8 @@ details {
   .spoiler details p {
     font-size: 16px;
   }
+}
+.comment-image:hover {
+  cursor: pointer;
+  color: #facbb9;
 }

@@ -18,23 +18,42 @@
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
 
-  <link rel="preload" as="image" href="./maps/1.jpg" />
-  <link rel="preload" as="image" href="./maps/2.jpg" />
-  <link rel="preload" as="image" href="./maps/3.jpg" />
-  <link rel="preload" as="image" href="./maps/4.jpg" />
-  <link rel="preload" as="image" href="./maps/5.jpg" />
-  <link rel="preload" as="image" href="./maps/6.jpg" />
-  <link rel="preload" as="image" href="./maps/7.jpg" />
-  <link rel="preload" as="image" href="./maps/9.jpg" />
-  <link rel="preload" as="image" href="./maps/10.jpg" />
-  <link rel="preload" as="image" href="./maps/11.jpg" />
-  <link rel="preload" as="image" href="./maps/12.jpg" />
-  <link rel="preload" as="image" href="./maps/13.jpg" />
-  <link rel="preload" as="image" href="./maps/14.jpg" />
-  <link rel="preload" as="image" href="./maps/15.jpg" />
-  <link rel="preload" as="image" href="./maps/16.jpg" />
-  <link rel="preload" as="image" href="./maps/17.jpg" />
-  <link rel="preload" as="image" href="./maps/18.jpg" />
+  <link rel="preload" as="image" href="./maps/d1.jpg" />
+  <link rel="preload" as="image" href="./maps/d4.jpg" />
+  <link rel="preload" as="image" href="./maps/d5.jpg" />
+  <link rel="preload" as="image" href="./maps/d6.jpg" />
+  <link rel="preload" as="image" href="./maps/d7.jpg" />
+  <link rel="preload" as="image" href="./maps/d9.jpg" />
+  <link rel="preload" as="image" href="./maps/d10.jpg" />
+  <link rel="preload" as="image" href="./maps/d11.jpg" />
+  <link rel="preload" as="image" href="./maps/d12.jpg" />
+  <link rel="preload" as="image" href="./maps/d13.jpg" />
+  <link rel="preload" as="image" href="./maps/d14.jpg" />
+  <link rel="preload" as="image" href="./maps/d15.jpg" />
+  <link rel="preload" as="image" href="./maps/d16.jpg" />
+  <link rel="preload" as="image" href="./maps/d17.jpg" />
+  <link rel="preload" as="image" href="./maps/d18.jpg" />
+  <link rel="preload" as="image" href="./maps/d19.jpg" />
+  <link rel="preload" as="image" href="./maps/d20.jpg" />
+
+  <link rel="preload" as="image" href="./maps/m1.jpg" />
+  <link rel="preload" as="image" href="./maps/m4.jpg" />
+  <link rel="preload" as="image" href="./maps/m5.jpg" />
+  <link rel="preload" as="image" href="./maps/m6.jpg" />
+  <link rel="preload" as="image" href="./maps/m7.jpg" />
+  <link rel="preload" as="image" href="./maps/m9.jpg" />
+  <link rel="preload" as="image" href="./maps/m10.jpg" />
+  <link rel="preload" as="image" href="./maps/m11.jpg" />
+  <link rel="preload" as="image" href="./maps/m12.jpg" />
+  <link rel="preload" as="image" href="./maps/m13.jpg" />
+  <link rel="preload" as="image" href="./maps/m14.jpg" />
+  <link rel="preload" as="image" href="./maps/m15.jpg" />
+  <link rel="preload" as="image" href="./maps/m16.jpg" />
+  <link rel="preload" as="image" href="./maps/m17.jpg" />
+  <link rel="preload" as="image" href="./maps/m18.jpg" />
+  <link rel="preload" as="image" href="./maps/m19.jpg" />
+  <link rel="preload" as="image" href="./maps/m20.jpg" />
+
 
   <link
     rel="preload"
@@ -162,13 +181,13 @@
   </header>
 
   <!-- <img src="./maps/1.jpg" class="main-image" /> -->
-  <div id="cover" class="mobile-only"></div>
+  
   <div id="main-header" class="mobile-only">
     <div class="title-wrapper">
       <h1 class="title">Війна. Початок. Маріуполь</h1>
     </div>
   </div>
-
+  <div id="cover" class="mobile-only"></div>
   <div class="mobile-only lead">
     <p>
       Російські війська стрімко наблизилися до Маріуполя із Заходу — напрямку, з
@@ -208,8 +227,15 @@
       >
     </p>
   </div>
+  <section id="scroll-mobile" class="mobile-only">
+    <div class="scroll__graphic-mobile sticky">
+      <img id="gif-pic-mobile" src="./maps/m1.jpg" />
+    </div>
+    <div class="scroll__text-mobile"></div>
+  </section>
 
-  <section id="scroll">
+
+ <section id="scroll" class="desktop-only">
     <div class="scroll__graphic sticky">
       <img id="gif-pic" src="./maps/1.jpg" />
     </div>
@@ -224,13 +250,10 @@
           style="
             z-index: 999;
             position: absolute;
-            margin-top: -60vh;
-            margin-left: 12vw;
-            margin-right: auto;
           "
           class="title desktop-only"
         >
-          Війна. Початок. Маріуполь
+          Війна. <br>Початок.<br> Маріуполь
         </div>
       </div>
       <div
@@ -239,7 +262,7 @@
         style="height: 80vh"
       >
         <div style="z-index: 999; position: absolute">
-          <p>
+          <p class="lead-text">
             Російські війська стрімко наблизилися до Маріуполя із Заходу —
             напрямку, з якого ніхто не чекав на загрозу. Ми реконструювали
             ключові бої й важливі події в житті цивільних громадян у місті від
@@ -259,15 +282,7 @@
             березня. Остаточна кількість загиблих досі невідома, але, ймовірно,
             йдеться про понад 100 тис. жертв.
           </p>
-        </div>
-      </div>
-      <div
-        class="step desktop-only creds"
-        data-offset="0.8"
-        style="height: 80vh"
-      >
-        <div style="z-index: 999; position: absolute">
-          <p>
+          <p class="lead-text">
             Цей проєкт — спільна робота редакції ТЕКСТІВ і маріупольського сайту
             0629.com. Автори: Антон Сіманчук,
             <a
@@ -289,6 +304,15 @@
               >Інна Гадзинська</a
             >
           </p>
+        </div>
+      </div>
+      <div
+        class="step desktop-only creds"
+        data-offset="0.8"
+        style="height: 80vh"
+      >
+        <div style="z-index: 999; position: absolute">
+          
         </div>
       </div>
     </div>
@@ -508,7 +532,7 @@
             class="comment-image"
             id="comment-image-1"
             data="1"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >&#x24D8
             Дивіться на карті</span
           >, де пролягала лінія фронту на 24 лютого 2022 року, а також де
@@ -517,17 +541,6 @@
           позиції на лінії від Піщовика до узбережжя Азовського моря, зазнавала
           ударів, але тримала лінію оборони.
         </p>
-         <figure>
-          <img
-            src="./photo/2402_mariupol2.jpg"
-            alt="На фото: вулиця в центрі Маріуполя 24 лютого 2022 року"
-            class="inner-image"
-          />
-          <figcaption>
-            На фото: вулиця в центрі Маріуполя 24 лютого 2022 року.
-            <a href="http://0629.com/" target="_blank"> Джерело: 0629.com</a>
-          </figcaption>
-        </figure>
       </div>
     </div>
     <div class="step content-step" datadate="24-02-2022" datawiev="civil">
@@ -554,6 +567,17 @@
           Але невдовзі стало зрозуміло, що треба зупиняти металургійні печі.
           Почалася війна.
         </p>
+         <figure>
+          <img
+            src="./photo/2402_mariupol2.jpg"
+            alt="На фото: вулиця в центрі Маріуполя 24 лютого 2022 року"
+            class="inner-image"
+          />
+          <figcaption>
+            На фото: вулиця в центрі Маріуполя 24 лютого 2022 року.
+            <a href="http://0629.com/" target="_blank"> Джерело: 0629.com</a>
+          </figcaption>
+        </figure>
       </div>
     </div>
     <div
@@ -618,7 +642,7 @@
             class="comment-image"
             id="comment-image-2"
             data="2"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
             >&#x24D8 поділили на чотири сектори </span
           >розповідає Давід Касаткін, лейтенант 2-го батальону ОЗСП “АЗОВ”. – За
           два з них відповідали наші 1-й і 2-й батальони. Ми з командиром мого
@@ -644,7 +668,7 @@
             class="comment-image"
             id="comment-image-3"
             data="3"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
             >&#x24D8 по маріупольському аеропорту почала бити авіація й корабельна
             артилерія</span
           >. Полковник, який керував штабом оборони в аеропорту, кудись зник, як
@@ -738,7 +762,7 @@
             class="comment-image"
             id="comment-image-5"
             data="5"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
             >&#x24D8 морському порту</span
           > базувалися кораблі 9-го ДнНК (9-й дивізіон надводних кораблів) та
           23-го ЗМО (Маріупольський загін морської оборони): кілька броньованих
@@ -847,9 +871,9 @@
         <h3>Загроза з Заходу</h3>
         <p>
           «На другий день, після захоплення Мелітополя, стала зрозуміла
-          швидкість просування ворога, –<a>
+          швидкість просування ворога, –<a
             href="https://www.youtube.com/watch?v=xGhuYXAn2Mc&ab_channel=RadioNV"
-            target="_blank" каже Богдан Кротевич</a
+            target="_blank"> каже Богдан Кротевич</a
           >
           , майор, начальник штабу ОЗСП «АЗОВ». – Ми очікували висадки на
           ділянці узбережжя Азовського моря від Маріуполя до Юр’ївки, де ми
@@ -868,7 +892,7 @@
             class="comment-image"
             id="comment-image-6"
             data="6"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
             >&#x24D8 Ми підірвали мости біля Мангуша і Старої Ялти та відійшли до
             міста».</span
           >
@@ -972,9 +996,9 @@
           через декілька годин люди повернулись знову. Виставляти ж охорону на
           постійній основі біля кожного магазину у патрульки вже не могла.
         </p>
-        <video src="./video/metro.mp4" autoplay muted class="inner-video">
+        <video src="./video/CL9xfY4vjKg.mp4" autoplay muted controls class="inner-video">
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/metro.mp4">download it</a> and watch it with
+          you can <a href="./video/CL9xfY4vjKg.mp4">download it</a> and watch it with
           your favorite video player!
         </video>
         <p>
@@ -1034,9 +1058,9 @@
           структурами надійно обороняє місто Маріуполь. Ми будемо битися до
           останньої краплі крові.”
         </p>
-        <video src="./video/prokopenko.mp4" autoplay muted class="inner-video">
+        <video src="./video/Sp74_snITeU.mp4" autoplay controls muted class="inner-video">
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/prokopenko.mp4">download it</a> and watch it
+          you can <a href="./video/Sp74_snITeU.mp4">download it</a> and watch it
           with your favorite video player!
         </video>
         <p>
@@ -1047,6 +1071,7 @@
           src="./video/03_AZOV_BMP3.mp4"
           autoplay
           muted
+          controls
           class="inner-video"
         >
           Sorry, your browser doesn't support embedded videos, but don't worry,
@@ -1059,7 +1084,7 @@
             class="comment-image"
             id="comment-image-7"
             data="7"
-            style="color:#fee9ba; cursor: pointer"
+            style="color:#FACBB9; cursor: pointer"
           >
             &#x24D8 помічено на заході, у селищі Осипенко</span
           >, на відстані 60 км від Маріуполя.
@@ -1068,6 +1093,7 @@
           src="./video/2602_berdroad.mp4"
           autoplay
           muted
+          controls
           class="inner-video"
         >
           Sorry, your browser doesn't support embedded videos, but don't worry,
@@ -1124,7 +1150,7 @@
             class="comment-image"
             id="comment-image-9"
             data="9"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 на перехрестя проспекту Бойка та вулиці Карпінського</span
           >
@@ -1177,7 +1203,7 @@
             class="comment-image"
             id="comment-image-11"
             data="11"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 аглофабрики заводу “Ілліча”
           </span>
@@ -1240,7 +1266,7 @@
             class="comment-image"
             id="comment-image-12"
             data="12"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 поблизу селища Тополине.
           </span>
@@ -1258,7 +1284,7 @@
             class="comment-image"
             id="comment-image-13"
             data="13"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 автомобільний міст через Кальміус.
           </span>
@@ -1343,7 +1369,7 @@
             class="comment-image"
             id="comment-image-15"
             data="15"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 Тому на схемі секторів
           </span>
@@ -1375,7 +1401,7 @@
               class="comment-image"
               id="comment-image-16"
               data="16"
-              style="color: #fee9ba; cursor: pointer"
+              style="color: #FACBB9; cursor: pointer"
             >
               &#x24D8 торговельних центрів "Епіцентр", "Сільпо"
             </span>
@@ -1397,7 +1423,7 @@
             class="comment-image"
             id="comment-image-17"
             data="17"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 аеропорт
           </span>
@@ -1409,7 +1435,7 @@
             class="comment-image"
             id="comment-image-17"
             data="17"
-            style="color:#fee9ba ; cursor: pointer"
+            style="color:#FACBB9 ; cursor: pointer"
           >
             &#x24D8 в районі Черьомушек
           </span>
@@ -1448,7 +1474,7 @@
             class="comment-image"
             id="comment-image-18"
             data="18"
-            style="color:#fee9ba; cursor: pointer"
+            style="color:#FACBB9; cursor: pointer"
           >
             &#x24D8 цегельного заводу
           </span>
@@ -1466,7 +1492,7 @@
             class="comment-image"
             id="comment-image-19"
             data="19"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 Мангуш та Нікольське
           </span>
@@ -1492,7 +1518,7 @@
             class="comment-image"
             id="comment-image-20"
             data="20"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 драмтеатру
           </span>
@@ -1507,20 +1533,20 @@
             class="comment-image"
             id="comment-image-21"
             data="21"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 пожежну частину
           </span>
           на вулиці Таганрозькій на сході Маріуполя.
         </p>
         <video
-          src="./video/fire_station.mp4"
+          src="./video/zvKQgw0iA0.mp4"
           autoplay
           muted
           class="inner-video"
         >
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/fire_station.mp4">download it</a> and watch
+          you can <a href="./video/zvKQgw0iA0.mp4">download it</a> and watch
           it with your favorite video player!
         </video>
       </div>
@@ -1539,7 +1565,7 @@
             class="comment-image"
             id="comment-image-22"
             data="22"
-            style="color:#fee9ba; cursor: pointer"
+            style="color:#FACBB9; cursor: pointer"
           >
             &#x24D8 завод «Сателіт»
           </span>
@@ -1556,9 +1582,9 @@
           Місто залишилося без води, тому люди радіють дощу та снігу, щоб
           зібрати хоч трохи води. </p>
 
-  <video src="./video/gVXYfBTjvg0.mp4" autoplay muted class="inner-video">
+  <video src="./video/gT0CtK9UtoI.mp4" autoplay muted controls class="inner-video">
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/gVXYfBTjvg0.mp4">download it</a> and watch it with
+          you can <a href="./video/gT0CtK9UtoI.mp4">download it</a> and watch it with
           your favorite video player!
         </video><p>
 
@@ -1566,16 +1592,16 @@
 
           Чимало мирних мешканців ховається у бомбосховищах «Азовтсалі» та в
           інших бомбосховищах лівобережного району. Тривають обстріли житлових
-          кварталів у східних і західних районах міста.</p>  <video src="./video/BdWrqM-KoUY.mp4" autoplay muted class="inner-video">
+          кварталів у східних і західних районах міста.</p>  <video src="./video/ujfMO2hYJTQ.mp4" autoplay muted controls class="inner-video">
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/BdWrqM-KoUY.mp4">download it</a> and watch it with
+          you can <a href="./video/ujfMO2hYJTQ.mp4">download it</a> and watch it with
           your favorite video player!
         </video><p>На відео – наслідки обстрілів на бульварі
           Меотіди, 7 березня 2022 року 
           </p>
-          <video src="./video/dT6pyDW6qPct.mp4" autoplay muted class="inner-video">
+          <video src="./video/bhxSz_pOUes.mp4" autoplay muted controls class="inner-video">
           Sorry, your browser doesn't support embedded videos, but don't worry,
-          you can <a href="./video/dT6pyDW6qPct.mp4">download it</a> and watch it with
+          you can <a href="./video/bhxSz_pOUes.mp4">download it</a> and watch it with
           your favorite video player!
         </video>
           <p>На
@@ -1597,7 +1623,7 @@
             class="comment-image"
             id="comment-image-24"
             data="24"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 Покровському,
           </span>
@@ -1632,7 +1658,7 @@
             class="comment-image"
             id="comment-image-26"
             data="26"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 пологовому будинку </span
           >, розташованих у самому центрі міста, повідомивши, що там базувалися
@@ -1683,7 +1709,7 @@
             class="comment-image"
             id="comment-image-27"
             data="27"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 (проспектів Миру та Металургів)
           </span>
@@ -1709,7 +1735,7 @@
             class="comment-image"
             id="comment-image-28"
             data="28"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 «Metro»
           </span>
@@ -1720,7 +1746,7 @@
             class="comment-image"
             id="comment-image-29"
             data="29"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 вулиці Купріна
           </span>
@@ -1769,7 +1795,7 @@
             class="comment-image"
             id="comment-image-30"
             data="30"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 школи №67
           </span>
@@ -1791,7 +1817,7 @@
             class="comment-image"
             id="comment-image-31"
             data="31"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 64-ї школи
           </span>
@@ -1832,7 +1858,7 @@
             class="comment-image"
             id="comment-image-32"
             data="32"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 перехрестя вулиці Купріна та Митрополитської.
           </span>
@@ -1860,7 +1886,7 @@
             class="comment-image"
             id="comment-image-33"
             data="33"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 Знищено Будинок зв’язку
           </span>
@@ -1900,7 +1926,7 @@
             class="comment-image"
             id="comment-image-34"
             data="34"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 провулку Граверному
           </span>
@@ -1928,7 +1954,7 @@
             class="comment-image"
             id="comment-image-35"
             data="35"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 (вул. Троїцька, 46)
           </span>
@@ -1994,7 +2020,7 @@
             class="comment-image"
             id="comment-image-37"
             data="37"
-            style="color: #fee9ba; cursor: pointer"
+            style="color: #FACBB9; cursor: pointer"
           >
             &#x24D8 драмтеатру
           </span>
