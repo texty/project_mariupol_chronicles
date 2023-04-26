@@ -18,6 +18,7 @@ var step = document.querySelector("#scroll > .scroll__text > .step"); // text.se
 var scroller = scrollama();
 
 function handleStepEnter(r) {
+  console.log(r.index);
   if (r.index < 4) {
     $("#gif-pic").attr("src", Images[1]);
   } else {
@@ -32,7 +33,7 @@ function init() {
       graphic: ".scroll__graphic",
       text: ".scroll__text",
       step: ".scroll__text .step",
-      offset: 0.9,
+      offset: 0.5,
       debug: false,
       progress: true,
     })
@@ -46,7 +47,7 @@ for (var i = 1; i < 21; i++) {
 
   d3.select(".scroll__text-mobile")
     .append("div")
-    .attr("class", "step")
+    .attr("class", "step-mobile")
     .append("div")
     .attr("class", "step-map");
 }
@@ -80,8 +81,8 @@ function initMobile() {
       container: "#scroll-mobile",
       graphic: ".scroll__graphic-mobile",
       text: ".scroll__text-mobile",
-      step: ".scroll__text-mobile .step",
-      offset: 0.9,
+      step: ".scroll__text-mobile .step-mobile",
+      offset: 0.5,
       debug: false,
       progress: true,
     })

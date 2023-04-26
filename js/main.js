@@ -2,7 +2,7 @@ const scrollerTotal = scrollama();
 
 scrollerTotal
   .setup({
-    step: ".step",
+    step: ".content-step",
   })
   .onStepEnter((response) => {
     console.log(response.index);
