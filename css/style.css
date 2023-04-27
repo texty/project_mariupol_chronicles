@@ -453,7 +453,7 @@ footer {
   font-size: calc(14px + 0.5vw);
   margin: auto;
   line-height: 1.5;
-  margin-bottom: 50px;
+  margin-bottom: 2vh;
 }
 
 #social_buttons {
@@ -734,7 +734,7 @@ footer a {
     width: 100%;
   }
   #footer p {
-    width: 95vw;
+    width: 70vw;
   }
   .step-map {
     height: 30vh;
