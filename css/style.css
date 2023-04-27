@@ -28,28 +28,33 @@
   src: url("../fonts/PROXIMA-NOVA-A-SEMIBOLD.OTF") format("opentype");
 }
 
-a:link {
+br {
+  display: block;
+  margin: 10px 0;
+}
+
+#main a:link {
   color: #ff673f;
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
 }
 
-a:visited {
+#main a:visited {
   color: #ff673f;
   background-color: transparent;
   text-decoration: none;
   cursor: pointer;
 }
 
-a:hover {
+#main a:hover {
   color: #ff673f;
   background-color: transparent;
   text-decoration: underline;
   cursor: pointer;
 }
 
-a:active {
+#main a:active {
   color: #ff673f;
   background-color: transparent;
   text-decoration: underline;
@@ -760,6 +765,7 @@ footer a {
   font-family: "proxima";
   font-size: calc(14px + 0.5vw);
   line-height: 1.5;
+  margin-bottom: 2vh;
 }
 
 @media (max-width: 1023px) {
@@ -815,6 +821,17 @@ footer a {
   line-height: 1.5;
   margin-top: 10px;
   margin-left: 70px;
+}
+
+.video-desc {
+  font-family: "proxima" !important;
+  margin: auto !important;
+  font-weight: 300 !important;
+  font-style: italic !important;
+  font-size: 1em !important;
+  line-height: 1.5 !important;
+  margin-top: 10px !important;
+  margin-left: 70px !important;
 }
 
 .inner-video {
@@ -978,7 +995,7 @@ body {
 .tippy-box .tippy-content img {
   max-height: 50vh;
   z-index: 2;
-  box-shadow: 1px 1px 5px 5px #000000;
+  box-shadow: 1px 1px 5px 5px #616161;
   max-width: 90vw;
 }
 
