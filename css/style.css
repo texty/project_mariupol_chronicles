@@ -675,7 +675,9 @@ footer a {
 }
 
 .scroll__graphic {
-  width: 100%;
+  margin: auto;
+  display: flex;
+  max-width: 100%;
   position: -webkit-sticky;
   position: sticky;
   top: 1px;
@@ -856,9 +858,10 @@ footer a {
 }
 
 #gif-pic {
-  height: 100%;
-  width: 100%;
-  max-width: 100vw;
+  margin: auto;
+  /* height: 100%;
+  width: 100%; */
+  max-width: 102vw;
   max-height: 100vh;
 }
 
@@ -920,6 +923,7 @@ footer a {
 }
 
 .title-wrapper {
+  display: flex;
   width: 80%;
 }
 
@@ -934,6 +938,7 @@ footer a {
   font-size: calc(15px + 0.5vw);
   line-height: 1.5;
   font-weight: 600;
+  /* background-color: #ffffffdd; */
 }
 
 .lead-text {
@@ -1126,4 +1131,43 @@ details {
 .comment-image:hover {
   cursor: pointer;
   color: #ff673f;
+}
+
+.step-text {
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 100vh;
+}
+
+.step-text-wrapper {
+  padding: 20px;
+  /* background-color: #ffffffdd; */
+  font-size: calc(18px + 0.5vw);
+  font-family: "proxima";
+}
+
+.lead-back {
+  background-color: #ffffffdd;
+  padding: 20px;
+}
+
+.step-text:last-child {
+  margin-bottom: 10vh !important;
+  height: 30vh !important;
+}
+
+.step-text {
+  background-color: #ffffffdd;
+}
+
+/* #scroll .step-text:first-child {
+  background-color: rgba(244, 0, 0, 0) !important;
+} */
+
+#scroll > div.scroll__text > div:nth-child(3) {
+  background-color: rgba(255, 0, 0, 0) !important;
+}
+
+#scroll > div.scroll__text > div:nth-child(19) {
+  background-color: rgba(255, 0, 0, 0) !important;
 }
