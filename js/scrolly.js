@@ -43,6 +43,7 @@ var step = document.querySelector("#scroll > .scroll__text > .step"); // text.se
 var scroller = scrollama();
 
 function handleStepEnter(r) {
+  console.log(Images[r.index]);
   $("#gif-pic").attr("src", Images[r.index]);
   // console.log(r.index);
   // if (r.index < 3) {
@@ -93,12 +94,13 @@ var stepMobile = document.querySelector(
 var scrollerMobile = scrollama();
 
 function handleStepEnterMobile(r) {
-  console.log(r.index);
-  if (r.index < 4) {
-    $("#gif-pic-mobile").attr("src", ImagesMobile[1]);
-  } else {
-    $("#gif-pic-mobile").attr("src", ImagesMobile[r.index]);
-  }
+  $("#gif-pic-mobile").attr("src", ImagesMobile[r.index]);
+  // console.log(r.index);
+  // if (r.index < 4) {
+  //   $("#gif-pic-mobile").attr("src", ImagesMobile[1]);
+  // } else {
+  //   $("#gif-pic-mobile").attr("src", ImagesMobile[r.index]);
+  // }
 }
 
 function initMobile() {
