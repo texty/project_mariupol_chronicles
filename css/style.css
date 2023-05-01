@@ -867,10 +867,12 @@ footer a {
 }
 
 #stiky-header {
+  display: grid;
+  grid-template-columns: 1fr 100fr;
   position: sticky;
   height: 10vh;
   width: 100vw;
-  z-index: 999;
+  z-index: 998;
 }
 
 #date-placeholder {
@@ -1010,7 +1012,7 @@ body {
 .tippy-box .tippy-content img {
   max-height: 50vh;
   z-index: 2;
-  box-shadow: 1px 1px 5px 5px #616161;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.4);
   max-width: 90vw;
 }
 
@@ -1071,7 +1073,9 @@ summary {
   font-size: 1.4em;
   cursor: pointer;
   position: relative;
+  display: flex;
 }
+
 summary:before {
   right: 0.3em;
   top: 0.4em;
@@ -1209,4 +1213,52 @@ details {
 
 #scroll-mobile > div.scroll__text-mobile > div:nth-child(1) {
   margin-bottom: 5vh;
+}
+
+.share-article-l {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  width: max-width;
+  z-index: 999;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.sb-l {
+  margin-bottom: 5px;
+  margin-right: 10px;
+  z-index: 999;
+  /* border: 1.5px solid gray; */
+  padding: 2px 5px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  /* border-radius: 50%; */
+}
+
+/* .sb-l:hover {
+  border: 1.5px solid gray;
+} */
+
+.share-btn-l {
+  margin: auto;
+  z-index: 999;
+}
+
+.fb-l img {
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.tw-l img {
+  width: 30px;
+  height: 30px;
+  z-index: 999;
+  cursor: pointer;
 }
